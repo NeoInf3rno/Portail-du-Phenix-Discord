@@ -1,55 +1,13 @@
 /**
- * @name Portail du Phénix
- * @description Thème Discord Portail du Phénix
+ * @name Portail du Phénix TEST
+ * @description Test du fond Phénix
  * @author NeoInf3rno
  */
 
-:root {
-    --background-image: url("https://cdn.jsdelivr.net/gh/NeoInf3rno/Portail-du-Phenix-Discord@main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png");
+body {
+    background: red !important;
 }
 
-/* Le fond de l'application */
 #app-mount {
-    background: transparent !important;
-}
-
-#app-mount > div {
-    background: transparent !important;
-}
-
-/* Couche wallpaper */
-#app-mount::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -100;
-    pointer-events: none;
-
-    background-image: var(--background-image) !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
-
-/* Transparence des zones Discord */
-
-[class*="guilds_"] {
-    background: rgba(0, 0, 0, 0.55) !important;
-}
-
-[class*="sidebar_"] {
-    background: rgba(5, 2, 2, 0.55) !important;
-}
-
-[class*="chat_"],
-[class*="chatContent_"] {
-    background: rgba(0, 0, 0, 0.12) !important;
-}
-
-[class*="membersWrap_"] {
-    background: rgba(5, 2, 2, 0.55) !important;
-}
-
-[class*="title_"] {
-    background: rgba(5, 2, 2, 0.45) !important;
+    background: blue !important;
 }
