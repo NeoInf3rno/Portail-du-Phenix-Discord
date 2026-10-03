@@ -1,0 +1,68 @@
+/**
+ * @name Portail du Phénix
+ * @description Thème Discord du Portail du Phénix
+ * @author NeoInf3rno
+ */
+
+:root {
+    --phenix-bg: url("./Royaume du Phenix de Feu.png");
+}
+
+/* Fond général */
+html,
+body,
+#app-mount {
+    background: transparent !important;
+}
+
+/* Arrière-plan principal */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -100;
+    background-image: var(--phenix-bg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Barres et panneaux Discord */
+[class*="sidebar"],
+[class*="chat"],
+[class*="membersWrap"],
+[class*="container"],
+[class*="content"] {
+    background-color: rgba(5, 3, 3, 0.55) !important;
+}
+
+/* Zone des messages */
+[class*="chatContent"] {
+    background: rgba(0, 0, 0, 0.20) !important;
+}
+
+/* Liste des salons */
+[class*="sidebar"] {
+    background: rgba(5, 2, 2, 0.72) !important;
+}
+
+/* Liste des membres */
+[class*="membersWrap"] {
+    background: rgba(5, 2, 2, 0.72) !important;
+}
+
+/* Barre supérieure */
+[class*="title"] {
+    background: rgba(5, 2, 2, 0.60) !important;
+}
+
+/* Couleur des liens */
+a {
+    color: #ff6a00 !important;
+}
+
+/* Sélection */
+::selection {
+    background: rgba(255, 80, 0, 0.45);
+}
