@@ -1,47 +1,27 @@
 /**
  * @name Portail du Phénix
- * @description Thème Discord du Portail du Phénix
+ * @description Thème Discord Portail du Phénix
  * @author NeoInf3rno
  */
 
-html,
-body,
 #app-mount {
-    background: transparent !important;
+    background: url("https://raw.githubusercontent.com/NeoInf3rno/Portail-du-Phenix-Discord/refs/heads/main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png") center center / cover fixed no-repeat !important;
 }
 
-body {
-    background-image: url("https://raw.githubusercontent.com/NeoInf3rno/Portail-du-Phenix-Discord/refs/heads/main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png") !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-}
-
-/* Fond derrière Discord */
-#app-mount::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background: url("https://raw.githubusercontent.com/NeoInf3rno/Portail-du-Phenix-Discord/refs/heads/main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png") center / cover no-repeat fixed !important;
-}
-
-/* Transparence des panneaux */
+/* Transparence des zones Discord */
 [class*="sidebar"] {
-    background: rgba(5, 2, 2, 0.65) !important;
+    background: rgba(5, 2, 2, 0.60) !important;
 }
 
 [class*="chat"],
 [class*="chatContent"] {
-    background: rgba(0, 0, 0, 0.20) !important;
+    background: rgba(0, 0, 0, 0.15) !important;
 }
 
 [class*="membersWrap"] {
-    background: rgba(5, 2, 2, 0.65) !important;
+    background: rgba(5, 2, 2, 0.60) !important;
 }
 
 [class*="title"] {
-    background: rgba(5, 2, 2, 0.55) !important;
+    background: rgba(5, 2, 2, 0.50) !important;
 }
