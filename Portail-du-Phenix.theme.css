@@ -1,71 +1,13 @@
 /**
  * @name Portail du Phénix
- * @description Thème Discord du Portail du Phénix
+ * @description Fond Portail du Phénix
  * @author NeoInf3rno
  */
 
-:root {
-    --phenix-bg: url("https://cdn.jsdelivr.net/gh/NeoInf3rno/Portail-du-Phenix-Discord@main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png");
-}
-
-/* Fond transparent */
-html,
 body {
-    background: transparent !important;
-}
-
-/* Application Discord */
-#app-mount {
-    background: transparent !important;
-    position: relative !important;
-    z-index: 1 !important;
-}
-
-/* Image du Phénix */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-
-    background-image: var(--phenix-bg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* Panneau des serveurs */
-[class*="guilds"] {
-    background: rgba(5, 2, 2, 0.70) !important;
-}
-
-/* Liste des salons */
-[class*="sidebar"] {
-    background: rgba(5, 2, 2, 0.62) !important;
-}
-
-/* Zone de discussion */
-[class*="chat"],
-[class*="chatContent"] {
-    background: rgba(0, 0, 0, 0.18) !important;
-}
-
-/* Membres */
-[class*="membersWrap"] {
-    background: rgba(5, 2, 2, 0.62) !important;
-}
-
-/* Barre supérieure */
-[class*="title"] {
-    background: rgba(5, 2, 2, 0.55) !important;
-}
-
-/* Couleur orange Phénix */
-a {
-    color: #ff6a00 !important;
-}
-
-::selection {
-    background: rgba(255, 80, 0, 0.45);
+    background-image: url("https://raw.githubusercontent.com/NeoInf3rno/Portail-du-Phenix-Discord/refs/heads/main/Royaume%20du%20Ph%C3%A9nix%20de%20Feu.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
